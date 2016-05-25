@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>七巧板</title>
+</head>
+<body>
+	<canvas id="canvas" width="1024" height="628" style="border:2px solid #999;display:block;margin:0 auto;">
+		当前浏览器不支持canvas，请更换浏览器后再试 
+		<!-- 当浏览器支持canvas时，浏览器会自动忽略此段话 -->
+	</canvas>
+	<script>
+	window.onload=function(){
+		var canvas=document.getElementById("canvas");
+		var context=canvas.getContext("2d");
+
+		//例子：
+		// context.beginPath();
+		// context.moveTo(0,0);
+		// context.lineTo(300,0);
+		// context.lineTo(300,400);
+		// context.lineTo(0,0);
+		// context.closePath();
+		// context.fillStyle="green";
+		// context.fill();
+
+		// context.beginPath();
+		// context.moveTo(400,0);
+		// context.lineTo(800,0);
+		// context.lineTo(800,300);
+		// context.lineTo(400,0);
+		// context.closePath();
+		// context.strokeStyle="#abcdef";
+		// context.stroke();
+
+		var qiqiaoban=[
+			{p:[{x:0,y:0},{x:600,y:0},{x:300,y:300}],color:"red"},
+			{p:[{x:0,y:0},{x:0,y:600},{x:300,y:300}],color:"green"},
+			{p:[{x:0,y:600},{x:300,y:600},{x:150,y:450}],color:"pink"},
+			{p:[{x:300,y:600},{x:600,y:600},{x:600,y:300}],color:"yellow"},
+			{p:[{x:300,y:300},{x:150,y:450},{x:300,y:600},{x:450,y:450}],color:"blue"},
+			{p:[{x:300,y:300},{x:450,y:150},{x:450,y:450}],color:"#abcdef"},
+			{p:[{x:600,y:0},{x:600,y:300},{x:450,y:450},{x:450,y:150}],color:"#666"}
+
+		];
+		for(var i=0;i<qiqiaoban.length;i++){
+			draw(qiqiaoban[i],context);
+		}
+		function draw(pt,cxt){
+			cxt.beginPath();
+			cxt.moveTo(pt.p[0].x,pt.p[0].y);
+			for(var j=1;j<pt.p.length;j++){
+				cxt.lineTo(pt.p[j].x,pt.p[j].y);
+			}
+			//cxt.lineTo(pt.p[0].x,pt.p[0].y);
+
+			cxt.closePath(); //会自动封闭路劲 不一定成对出现
+			cxt.fillStyle=pt.color;
+			cxt.fill();
+		}
+	}
+	</script>
+</body>
+</html>
