@@ -1,0 +1,69 @@
+/* 首页banner */
+.banner{height: 12.5rem;overflow: hidden;position: relative;}
+.banner-img{height: 100%;}
+.banner-img ul{width:100%;position: absolute;left: 0;}
+.banner-img li{float: left;width:100%;}
+.banner-img img{max-width: 100%;}
+.banner-dot{text-align: center;position: absolute;bottom:10px;width: 100%;}
+.banner-dot li{display: inline-block;width: 8px;height: 8px;border-radius: 50%;background: #fff;}
+.banner-dot li.active{background: #d80f0f;}
+
+/* 首页新闻 */
+.news{height: 3.583333rem;line-height: 3.583333rem;background:#fff url(../img/news_icon.png) no-repeat 15px center/18px;overflow: hidden;position: relative;}
+.news-con{position: absolute;top:0;}
+.news p{padding-left: 22px;height: 3.583333rem;overflow: hidden;}
+.news p .txt{display: inline-block;width:65%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+/* 首页产品 */
+.pro{height: 17.708333rem;background: #fff;margin-top: 0.833333rem;margin-bottom: 0.833333rem;padding-top: 0.833333rem;}
+.pro .row{}
+.pro li{display: block;float: left;width: 31%;height: 7.541667rem;border:1px solid #d8d8d8;margin-right: 3.5%;margin-bottom: 0.833333rem;}
+.pro .row li:last-child{margin-right: 0;}
+.pro li a{display: block;text-align: center;width:100%;height: 100%;padding-top: 5.2rem;}
+.pro .item1 a{background: url(../img/pro_01.png) no-repeat center 1.583333rem/auto 32px;}
+.pro .item2 a{background: url(../img/pro_02.png) no-repeat center 1.583333rem/auto 32px;}
+.pro .item3 a{background: url(../img/pro_03.png) no-repeat center 1.583333rem/auto 33px;}
+.pro .item4 a{background: url(../img/pro_04.png) no-repeat center 1.583333rem/auto 30px;}
+.pro .item5 a{background: url(../img/pro_05.png) no-repeat center 1.583333rem/auto 28px;}
+.pro .item6 a{background: url(../img/pro_06.png) no-repeat center 1.583333rem/auto 28px;}
+
+/* 首页案例 */
+.case{height: 21.958333rem;background: #fff;overflow: hidden;}
+.case .title{font-size: 1.166667rem;color: #333;height: 4.791667rem;line-height: 4.791667rem}
+.case .title a{font-size: 0.916667rem;color: #999;}
+.case-slide{overflow: hidden;position: relative;height: 13.4rem;width: 100%;}
+.case-slide ul{width:300%;position: absolute;left: 0;}
+.case-slide li{float: left;}
+.case-slide .case-d{display: block;float: left;margin-right: 2%;width: 98%;}
+.case-slide li .case-d:last-child{margin-right: 0;}
+.case-slide .case-d .img-w{display: block;width: 100%;}
+.case-slide .case-d img{display: block;max-width: 100%;max-height: 9.083333rem;border:1px solid #ececec;margin:0 auto;}
+.case-slide .case-d .headline{max-width: 100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;line-height: 1.833333rem;margin-top: 0.875rem;color: #333;}
+.case-slide .case-d .time-w{line-height: 1.666667rem;color: #999;font-size: 0.833333rem;}
+.case-dot{text-align: center;margin-top: 1.458333rem;}
+.case-dot li{width: 8px;height: 8px;background: #b8b8b8;display: inline-block;border-radius: 50%;}
+.case-dot li.active{background: #dd0000;}
+
+/* 首页优势 */
+.spec{height: 10.166667rem;background: #e7e7e7;overflow: hidden;padding-top: 0.833333rem;position: relative;}
+.spec ul{width: 10000px;position: absolute;left: 15px;}
+.spec li{background: #fff;width: 19.291667rem;height: 8.583333rem;float: left;margin-right: 0.75rem;padding-left: 1.375rem;}
+.spec li:last-child{margin-right: 0;}
+.spec li .hl{color: #000;font-size: 1.333333rem;line-height: 2.708333rem;margin-bottom: 0.416667rem;padding-top: 1.25rem;}
+.spec li .hl .red{color: #ea2d41;}
+.spec li .txt{color: #999;font-size: 0.833333rem;line-height: 1.25rem}
+
+
+/* 首页合作商 */
+.corp{background: #fff;padding-bottom: 0.916667rem;}
+.corp .title{height: 3.916667rem;line-height: 3.916667rem;color: #333;font-size: 1.166667rem;margin-bottom: 0.208333rem;}
+.corp .row{}
+.corp .row:last-child{margin-bottom: 0;}
+.corp li{display: block;width: 31%;float: left;margin-right: 3.5%;text-align: center;margin-bottom: 0.833333rem;}
+.corp .row li:nth-child(3n){margin-right: 0;}
+.corp .row img{max-width: 100%;border:1px solid #ececec;position: relative;}
+.corp .row:first-child img{opacity: 0; top:-20px;}
+.corp .row:last-child img{opacity: 0; top:20px;}
+
+
+

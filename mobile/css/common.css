@@ -1,0 +1,84 @@
+html{font-size: 24px;}
+*{box-sizing: border-box;}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li{margin: 0;padding: 0;}
+body{font-size: 1.0rem;font-family: 'Microsoft Yahei';color: #666;overflow-x: hidden;background: #e7e7e7;}
+a{color: #666;text-decoration: none;}
+li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size: 1rem;font-weight: normal;}
+button{border:none;outline:none;}
+.fl{float: left;}
+.fr{float: right;}
+.clerfix{zoom:1;}
+.clearfix::after{content: '';display: table;clear: both;}
+.center{padding-left: 15px;padding-right: 15px;}
+
+@media (max-width: 480px){
+    html{font-size: 12px;}
+}
+
+/* header */
+.header{height:5.0rem;position:fixed;top:0;width:100%;background:#fff url(../img/header_02.png) no-repeat center center/10.416667rem;z-index: 1000;transition: all 0.2s ease-in-out;left:0;}
+.header .nav-collapse{background: url(../img/header_01.png) no-repeat 0 0/100%;width: 1.583333rem; height: 1.25rem;margin-top: 1.916667rem;}
+.header .web-share{background: url(../img/header_03.png) no-repeat 0 0/100%;width: 1.6rem;height: 1.458333rem;margin-top: 1.916667rem;}
+
+/* copyright */
+.copyright{background: #e7e7e7;height: 7.75rem;text-align: center;padding-top: 1.916667rem;}
+.copyright .copy_nav{height: 2.041667rem;line-height: 2.041667rem;}
+.copyright li{display: inline-block;margin-right: 1.25rem;}
+.copyright li:last-child{margin-right: 0;}
+.copyright li .PC{background: url(../img/icon.png) no-repeat left center/15px;padding-left: 1.583333rem;}
+.copyright .txt{font-size: 0.916667rem;line-height: 1.833333rem}
+
+/* footer */
+.footer{background: #fff;position: fixed;width: 100%;bottom:0;height: 5.166667rem;transition: all 0.2s ease-in-out;left:0;z-index: 1000;}
+.footer ul{height: 100%;}
+.footer li{display: block;float: left;width: 25%;text-align:center;}
+.footer li a{display: block;width: 100%;height: 100%;padding-top: 3.4rem;}
+.footer li.item1 a{background: url(../img/item_01.png) no-repeat center 0.8rem/auto 24px;}
+.footer li.item2 a{background: url(../img/item_02.png) no-repeat center 0.8rem/auto 24px;}
+.footer li.item3 a{background: url(../img/item_03.png) no-repeat center 0.8rem/auto 24px;}
+.footer li.item4 a{background: url(../img/item_04.png) no-repeat center 0.8rem/auto 24px;}
+
+
+.page{padding-top: 5.0rem;padding-bottom: 5.166667rem;position: relative;transition: all 0.2s ease-in-out;left:0;}
+
+
+.nav{position: fixed;left: -80%;top: 0;width: 80%;height: 100%;background: rgba(0,0,0,0.8) url(../img/nav.png) no-repeat 0 0/auto 100%;transition: all 0.2s ease-in-out;}
+.nav .title{height: 5.0rem;line-height: 5.0rem;background: #fff;color: #333;font-size: 1.166667rem;}
+.nav .nav-con li{display: block;height:4.916667rem;line-height: 4.916667rem;text-align: center;border-bottom: 1px dashed #fff;}
+.nav .nav-con li a{color: #fff;padding-left: 40px;}
+.nav .nav-con .item1 a{background: url(../img/nav_item_01.png) no-repeat left center/auto 16px;}
+.nav .nav-con .item2 a{background: url(../img/nav_item_02.png) no-repeat left center/auto 16px;}
+.nav .nav-con .item3 a{background: url(../img/nav_item_03.png) no-repeat left center/auto 16px;}
+.nav .nav-con .item4 a{background: url(../img/nav_item_04.png) no-repeat left center/auto 16px;}
+.nav .nav-con .item5 a{background: url(../img/nav_item_05.png) no-repeat left center/auto 16px;}
+.nav .nav-con .item6 a{background: url(../img/nav_item_06.png) no-repeat left center/auto 16px;}
+.nav .nav-con .item7 a{background: url(../img/nav_item_07.png) no-repeat left center/auto 16px;}
+
+
+.menu{background: #fff;height: 4.375rem;border-top: 1px solid #e3e3e3;position: relative;text-align: center;}
+.menu ul{text-align: center;font-size: 0;width: 624px;position: absolute;left: 15px;display: inline-block;}
+.menu li{display: inline-block;font-size: 1.166667rem;height: 4.375rem;margin-right: 37px;width: 116px;}
+
+.menu li:last-child{margin-right: 0;}
+.menu li a{display: block;width: 100%;height: 100%;line-height: 4.375rem;}
+.menu li.active a{border-bottom: 2px solid #d50000;}
+
+/* 二级导航出来效果 */
+.nav.in{left: 0;}
+.page.out{left: 80%;}
+.page.out .header{left:80%;}
+.page.out .header .nav-collapse{background: url(../img/header_04.png) no-repeat 0 0/auto 100%;}
+.page.out .footer{left: 80%;}
+
+
+
+
+
+
+
+
+
+
+
+

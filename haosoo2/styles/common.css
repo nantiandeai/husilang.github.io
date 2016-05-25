@@ -1,0 +1,71 @@
+html {font-size: 16px; /* 16px */ }
+body,p,h1,h2,h3,h4,h5,h6,ul{margin:0;padding: 0;}
+body,button,input{font-family: 'Microsoft Yahei';}
+button,input{outline: none;}
+a:hover{text-decoration: none;}
+.clearfix{zoom:1;}
+.clearfix:after{content: "";display: table;clear:both;}
+.fl{float: left;}
+.fr{float: right;}
+.pr{position: relative;}
+.ui-loader{display: none;}
+/* nav */
+.navbar-white{background-color: #fff;border-color: #fff;position: fixed;top:0;left: 0;right: 0;z-index: 1000;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);}
+.navbar-white .navbar-brand{width: 87px;height: 87px;}
+.navbar-white .search-form{padding-top: 30px;position: absolute;left: 120px;right: 0;background: #fff;z-index: 2;top:-60px;transition: top 0.2s ease-in-out;padding-right: 60px;}
+.navbar-white .search-form .ui-input-text{display: inline-block;width:90%;}
+.navbar-white .search-form input{border:none;width:90%;outline: none;font-size: 18px;}
+.navbar-white .search-form.show{top:0;}
+.nav>li>span{display: block;padding-top: 34px;padding-bottom: 34px;color:#333333;}
+.nav>li>span.tel{background: url(../img/tel.png) no-repeat left center;padding-left: 24px;}
+.navbar-white .search-btn{display:block;background: url(../img/searchBtn.png) no-repeat center;height: 88px;width: 3.875rem;border:none;outline: none;}
+.navbar-white .navbar-nav>li>a{padding-top: 34px;padding-bottom: 34px;color:#333333;transition: color 0.2s ease-in-out;padding-left: 0.9375rem;padding-right: 0.9375rem;}
+.navbar-white .navbar-nav>li.cur>a,.navbar-white .navbar-nav>li>a:focus, .navbar-white .navbar-nav>li>a:hover{background: transparent;color: #19b955;}
+.navbar-white .navbar-toggle{margin-top:1.5rem;}
+.navbar-white .navbar-toggle .icon-bar{position: relative;background-color: #19b955;}
+.navbar-toggle .icon-bar:after{position: absolute;width:4px;height: 4px;content: '';border-radius: 50%;background: #19b955;left: -6px;top:-1px;}
+.navbar-toggle .icon-bar+.icon-bar{margin-top: 7px;}
+.navbar-toggle .icon-bar{height: 3px;width: 24px;}
+
+
+/* footer-wrap */
+.footer-wrap{}
+.footer-wrap .pro-con{border-bottom: 1px solid #dedede;text-align: center;}
+.footer-wrap .pro-con a{color: #666666;line-height: 15px;padding: 60px 0 56px;display: block;}
+.footer-wrap .pro-con a:hover{color: #1a922e;text-decoration: none;}
+.footer-wrap .footer{padding:3.0rem 0 3.125rem;}
+.footer-wrap .footer p{line-height: 2.0rem;font-size: 0.875rem;color: #999999;}
+.footer-wrap .footer p span{margin-right: 1.5rem;}
+.footer-wrap .footer .icon{text-align: right;}
+.footer-wrap .footer .icon a{display: inline-block;width: 43px;height: 43px;margin-right: 22px;vertical-align: middle;}
+.footer-wrap .footer .wechat{background: url(../img/wechatIcon.png) no-repeat center/100%;}
+.footer-wrap .footer .sina{background: url(../img/sinaIcon.png) no-repeat center/100%;}
+.footer-wrap .footer .qq{background: url(../img/qqIcon.png) no-repeat center/100%;}
+.footer-wrap .footer .wechat:hover{background: url(../img/wechatIconH.png) no-repeat center/100%;}
+.footer-wrap .footer .sina:hover{background: url(../img/sinaIconH.png) no-repeat center/100%;}
+.footer-wrap .footer .qq:hover{background: url(../img/qqIconH.png) no-repeat center/100%;}
+
+.mNavBar{background: #000;color: #fff;width: 100%;position: absolute;text-align: center;padding: 0 15px;left: 0;right: 0;}
+.mNavBar ul{margin: 0;margin-top: 1.2rem;}
+.mNavBar li{list-style: none;}
+.mNavBar a{color: #fff;font-size: 0.87rem;line-height: 3.1875rem}
+.mNavBar .searchForm{margin-top: 1rem;border-top: 1px solid #818281;border-bottom: 1px solid #818281;margin-bottom: 4.5rem;}
+.mNavBar .searchForm input{background: transparent;border:none;line-height: 1.5rem;padding-top: 0.5rem;padding-bottom: 0.5rem;float: left;width: 15.75rem;padding-left: 20px;}
+.mNavBar .searchForm button{background: url(../img/nav-search.png) no-repeat center/1.5rem;float: right;margin-right: 1rem;width: 25px;height: 26px;border:none;}
+
+
+
+@media (max-width: 768px){ /* 768以下 */
+    html{font-size: 14px;}
+    .footer-wrap .pro-con{display: none;}
+    .footer-wrap .footer p{text-align: center;}
+    .footer-wrap .footer .icon{text-align: center;margin-top: 1rem;}
+    .navbar-white .navbar-nav>li>a{padding-left: 0.81rem;padding-right: 0.81rem;}
+}
+@media (max-width: 320px){ /* 768以下 */
+    html{font-size: 12px;}
+}
+
+
+
+
